@@ -17,6 +17,7 @@ shinyUI(pageWithSidebar(
         h5('The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models)'),
         h4('Steps'),
         h5('Give us your cylinders,Gross horseppower,Weight(lb/1000) in the left panel,and click the Prediciton button'),
+        h5('our prediction function will predict Miles/(US) gallon'),
         h4('You entered'), 
         verbatimTextOutput("oid1"),
         h4('Which resulted in a prediction of '), 
