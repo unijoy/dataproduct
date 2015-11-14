@@ -27,6 +27,8 @@ Just keep things simple ,we choice :
  
 as our predictors
 
+and the prediction function will predict Miles/(US) gallon
+
 ---
 ## Prediction
 The prediction function
@@ -46,7 +48,7 @@ mypredciton <- function(cyl,hp,wt){
 
 ---
 ## Result
-Using test data for our function:
+Using test data for our function to predcit Miles/(US) gallon:
 
 
 ```r
