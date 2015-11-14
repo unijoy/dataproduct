@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+bundleId:
+        https://api.rpubs.com/api/v1/document/125847/8905909113cd401fbd110458e4773c74
+url: http://rpubs.com/unijoy/125847
+when: 1447483082.1086
