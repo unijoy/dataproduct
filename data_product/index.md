@@ -1,0 +1,63 @@
+---
+title       : coursera data product project
+subtitle    : Motor Trend Car Road Tests
+author      : unijoy
+job         : enginner
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Data Description
+
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+--- .class #id 
+
+## Model 
+
+Just keep things simple ,we choice :
+
+ 1. "Number of cylinders"
+ 2. "Gross horsepower"
+ 3. "Weight(lb/1000)" 
+ 
+as our predictors
+
+---
+## Prediction
+The prediction function
+
+
+```r
+mypredciton <- function(cyl,hp,wt){
+    if(cyl != 0 & hp != 0 & wt !=0 ){
+        modelFit <- lm(mpg ~ cyl + hp + wt,data=mtcars)
+        df<- data.frame(cyl=cyl,hp=hp,wt=wt)
+        predict(modelFit,newdata = df)    
+    }
+    
+}
+```
+
+
+---
+## Result
+Using test data for our function:
+
+
+```r
+mypredciton(6,110,2.62)
+```
+
+```
+##        1 
+## 22.82043
+```
+
+
+
+
